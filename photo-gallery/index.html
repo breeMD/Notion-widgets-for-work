@@ -40,15 +40,18 @@
       max-width: 100%;
       height: auto;
     }
+
+    .thumbnail:hover .overlay {
+      opacity: 1;
+    }
+    
   </style>
 
 </head>
 
 <body>
 
-
   <main>
-
 
     <section id="gallery">
       <div class=" gallery-container container-fluid">
@@ -73,10 +76,16 @@
             <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="20" class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
-                <a class="lightbox" href="2.png">
-                  <img src="2.png">
-                </a>
+              <div class="thumbnail position-relative">
+                <img src="2.png">
+                
+                <div class="overlay position-absolute w-100 h-100 d-flex justify-content-center align-items-center"
+                     style="top:0; left:0; background:rgba(0,0,0,0.5); opacity:0; transition:0.3s;">
+                  <a href="1.png" class="btn btn-light btn-sm m-1" target="_blank">Lightbox</a>
+                  <a href="https://drive.google.com/drive/u/0/folders/1SSQSSUa6AuzTR1PGgLkvmj0gi3GlBdkV" class="btn btn-primary btn-sm m-1" target="_blank">Folder</a>
+                  <a href="https://docs.google.com/document/d/1WWvtmzkeN4SKvGmO7uUsRa32UidysgvO/edit" class="btn btn-primary btn-sm m-1" target="_blank">Doc</a>
+                </div>
+                
               </div>
             </div>
             <!---------------------------------------------->
@@ -159,10 +168,6 @@
                 </a>
               </div>
             </div>
-
-
-
-
           </div>
         </div>
       </div>
