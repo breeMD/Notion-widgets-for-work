@@ -91,11 +91,22 @@
             <!---------------------------------------------->
 
             <div data-aos="flip-up" data-aos-delay="40" class="col-sm-6 col-md-4 col-lg-3">
-              <div class="thumbnail">
+              <div class="thumbnail position-relative">
+                <!-- Image (click = lightbox) -->
                 <a class="lightbox" href="3.png">
-                  <img src="3.png">
+                  <img src="3.png" class="img-fluid">
                 </a>
 
+                <!-- Icons in corner -->
+                <div class="icon-links position-absolute" 
+                     style="top: 8px; right: 8px; display: flex; gap: 6px;">
+                  <a href="https://drive.google.com/drive/u/0/folders/1SSQSSUa6AuzTR1PGgLkvmj0gi3GlBdkV" target="_blank" class="text-light">
+                    <i class="fas fa-link"></i> <!-- Link icon -->
+                  </a>
+                  <a href="https://docs.google.com/document/d/1WWvtmzkeN4SKvGmO7uUsRa32UidysgvO/edit" target="_blank" class="text-light">
+                    <i class="fas fa-info-circle"></i> <!-- Info icon -->
+                  </a>
+                </div>
               </div>
             </div>
             <!---------------------------------------------->
